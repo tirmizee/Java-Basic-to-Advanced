@@ -4,7 +4,7 @@
 
 | Package      | Class | Description |
 | ------------- | ------------- |-------------|
-| banner.charset  | UTF-8  |ใช้เพื่อตั้งค่าการเข้ารหัสไฟล์แบนเนอร์  |
+| org.springframework.util  | StreamUtils  | Simple utility methods for dealing with streams |
 
 ### NumberFormat
 
