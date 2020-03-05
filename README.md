@@ -6,7 +6,9 @@
 | ------------- | ------------- |-------------|
 | org.springframework.util  | StreamUtils  | Simple utility methods for dealing with streams |
 
-### NumberFormat
+### Parallelism
+
+    -Djava.util.concurrent.ForkJoinPool.common.parallelism=10
 
 ### Reference 
 
