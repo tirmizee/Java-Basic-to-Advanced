@@ -14,6 +14,11 @@
 
 - Function
 
+        @FunctionalInterface
+        public interface Function<T, R> {
+            R apply(T t);
+        }
+
 ### Reference 
 
 - https://javahungry.blogspot.com/2020/02/variable-shadowing-and-variable-hiding.html
