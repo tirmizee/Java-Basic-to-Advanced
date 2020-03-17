@@ -20,6 +20,15 @@
             R apply(T t);
         
         }
+        
+ - Consumer
+ 
+        @FunctionalInterface
+        public interface Consumer<T> {
+        
+            void accept(T t);
+        
+        }
 
 ### Reference 
 
