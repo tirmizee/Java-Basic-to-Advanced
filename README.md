@@ -9,6 +9,10 @@
 ### Parallelism
 
     -Djava.util.concurrent.ForkJoinPool.common.parallelism=10
+    
+### Functional interface in Java 8
+
+- Function
 
 ### Reference 
 
