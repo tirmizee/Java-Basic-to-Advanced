@@ -46,8 +46,6 @@
             return "Hello";
         }
 
-Result 
-
     Hello
     finish
 
