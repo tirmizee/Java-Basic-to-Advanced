@@ -57,9 +57,12 @@
 			for (int i = 0; i < 5; i++) {
 				System.out.println("RunAsync");
 			}
-			System.out.println("Complete RunAsync");
+			System.out.println("Complete Run Async");
+		}).thenAccept(Void ->{
+			System.out.println("Next Run Async");
 		});
-		System.out.println("Next Step");
+		
+		System.out.println("Statement");
 		
 		// Block and wait for the future to complete
 		completableFuture.get();
