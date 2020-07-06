@@ -32,7 +32,7 @@
 
 ### CompletableFuture in Java 8
 
-- Sync
+#### Sync
     
         public static void main(String[] args) throws InterruptedException, ExecutionException {
             CompletableFuture<String> completableFuture = new CompletableFuture<>();
