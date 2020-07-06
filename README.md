@@ -36,5 +36,19 @@
 
 ### Reference 
 
+- Sync
+    
+        public static void main(String[] args) throws InterruptedException, ExecutionException {
+            CompletableFuture<String> completableFuture = new CompletableFuture<>();
+            completableFuture.complete(cal());
+            System.out.println(completableFuture.get());
+            System.out.println("finish");
+        }
+
+        public static String cal() throws InterruptedException {
+            Thread.sleep(5000L);
+            return "Hello";
+        }
+
 - https://javahungry.blogspot.com/2020/02/variable-shadowing-and-variable-hiding.html
 - https://www.java67.com/2015/12/top-30-oops-concept-interview-questions-answers-java.html
