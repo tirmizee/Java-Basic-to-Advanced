@@ -52,6 +52,19 @@
 
 #### Async
 
+	public static void main(String[] args) throws InterruptedException, ExecutionException {
+		CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(() -> {
+			for (int i = 0; i < 5; i++) {
+				System.out.println("RunAsync");
+			}
+			System.out.println("Complete RunAsync");
+		});
+		System.out.println("Next Step");
+		
+		// Block and wait for the future to complete
+		completableFuture.get();
+	}
+
 ### Reference 
 
 - https://javahungry.blogspot.com/2020/02/variable-shadowing-and-variable-hiding.html
