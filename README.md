@@ -34,18 +34,19 @@
 
 #### Sync
     
-        public static void main(String[] args) throws InterruptedException, ExecutionException {
-            CompletableFuture<String> completableFuture = new CompletableFuture<>();
-            completableFuture.complete(cal());
-            System.out.println(completableFuture.get());
-            System.out.println("finish");
-        }
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
+        CompletableFuture<String> completableFuture = new CompletableFuture<>();
+        completableFuture.complete(cal());
+        System.out.println(completableFuture.get());
+        System.out.println("finish");
+    }
 
-        public static String cal() throws InterruptedException {
-            Thread.sleep(5000L);
-            return "Hello";
-        }
+    public static String cal() throws InterruptedException {
+        Thread.sleep(5000L);
+        return "Hello";
+    }
 
+    Result
     Hello
     finish
 
