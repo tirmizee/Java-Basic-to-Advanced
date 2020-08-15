@@ -111,7 +111,8 @@
 		}
 	
 	}
-.
+
+Using
 
 	public static void main(String[] args) {
 		
@@ -122,6 +123,25 @@
 		inner.setName("inner");
 		
 		Main.StaticInner staticInner = new Main.StaticInner();
+		staticInner.setName("staticInner");
+		
+	}
+
+Or
+
+	// import com.inner.Main.*;
+	import com.inner.Main.Inner;
+	import com.inner.Main.StaticInner;
+
+	public static void main(String[] args) {
+		
+		Main main = new Main();
+		main.setName("main");
+		
+		Inner inner = main.new Inner();
+		inner.setName("inner");
+		
+		StaticInner staticInner = new StaticInner();
 		staticInner.setName("staticInner");
 		
 	}
