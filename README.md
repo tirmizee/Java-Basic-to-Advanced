@@ -111,7 +111,20 @@
 		}
 	
 	}
+.
 
+	public static void main(String[] args) {
+		
+		Main main = new Main();
+		main.setName("main");
+		
+		Main.Inner inner = main.new Inner();
+		inner.setName("inner");
+		
+		Main.StaticInner staticInner = new Main.StaticInner();
+		staticInner.setName("staticInner");
+		
+	}
 
 ### Reference 
 
