@@ -68,6 +68,51 @@
 		completableFuture.get();
 	}
 
+### Java Inner Nested
+
+	public class Main {
+
+		private String name;
+
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+	
+		class Inner {
+
+			private String name;
+
+			public String getName() {
+				return name;
+			}
+
+			public void setName(String name) {
+				this.name = name;
+			}
+
+		}
+    
+		static class StaticInner {
+
+			private String name;
+
+			public String getName() {
+				return name;
+			}
+
+			public void setName(String name) {
+				this.name = name;
+			}
+
+		}
+	
+	}
+
+
 ### Reference 
 
 - https://javahungry.blogspot.com/2020/02/variable-shadowing-and-variable-hiding.html
